@@ -2,7 +2,7 @@
 
 #this script starts the desktop
 #we set the background to a specified picture (used within i3)
-feh --bg-scale $HOME/Pictures/simple.png
+feh --bg-scale $HOME/Pictures/plant.jpg
 
 
 if [ ! -f /tmp/arch/booting ]; then
