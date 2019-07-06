@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #specify the theme here
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 # Customise the Powerlevel9k prompts
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time load)
