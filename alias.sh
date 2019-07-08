@@ -13,7 +13,11 @@ alias password='echo $(head -c 100 /dev/urandom | base64 | head -c 12)'
 
 alias scan='sudo nmap -O -p 22'
 alias cat='ccat'
-alias ls='lsd'
+
+if [[ "$(which lsd)" == "/usr/bin/lsd" ]]; then
+    alias ls='lsd'
+fi
+
 alias setup='sudo ip route del default via 172.16.128.1; sudo ip route add default via 172.16.128.1 dev wlp2s0 metric 101'
 alias exam='wine ~/apps/win/ExamMonitor.exe'
 alias setupD3='sudo ip route del default via 172.16.0.1; sudo ip route add default via 172.16.0.1 dev wlp2s0 metric 101'
