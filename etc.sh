@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$(id -u)" == "0" ]]; then
+if [[ "$(id -u)" != "0" ]]; then
     # only ask for ssh-agent once for every boot
     if [ ! -S ~/.ssh/ssh_auth_sock ]; then
         eval `ssh-agent`
@@ -13,3 +13,5 @@ fi
 # doing it this way makes it work it is a bug
 setxkbmap be
 
+#enable completion function
+compinit -u
