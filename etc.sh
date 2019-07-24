@@ -9,9 +9,12 @@ if [[ "$(id -u)" != "0" ]]; then
     export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
     ssh-add -l > /dev/null || ssh-add
 fi
-# setting the keyboard in the i3 config doesn't work for packet tracer
-# doing it this way makes it work it is a bug
-setxkbmap be
+
+if [[ "$(tty)" != "/dev/tty1" ]]; then
+    # setting the keyboard in the i3 config doesn't work for packet tracer
+    # doing it this way makes it work it is a bug
+    setxkbmap be
+fi
 
 #enable completion function
 compinit -u
