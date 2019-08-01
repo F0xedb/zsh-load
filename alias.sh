@@ -24,4 +24,5 @@ alias setupD3='sudo ip route del default via 172.16.0.1; sudo ip route add defau
 alias pdf='zathura'
 alias rss='newsboat'
 alias md='typora'
+alias neoshot="neofetch | sed -r 's:Public IP.*[0-9]{2}:Public IP\: Blurred for screenshot purpose:'"
 
