@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # usefull aliases go here
-alias Exam="wine /home/zeus/apps/Exam/win/ExamMonitor.exe"
-alias exam="wine /home/zeus/apps/Exam/win/ExamMonitor.exe"
+alias Exam="wine $HOME/apps/Exam/win/ExamMonitor.exe"
+alias exam="wine $HOME/apps/Exam/win/ExamMonitor.exe"
 
 
 #generates aliases in the form of 1 (go to dir 1), 2 (go to dir 2 etc) to see a list of dirst use d
