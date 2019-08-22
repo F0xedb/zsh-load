@@ -1,8 +1,4 @@
 <h1 align="center">Welcome to zsh-load 👋</h1>
-<p>
-</p>
-
-> custom executable scripts for zsh
 
 ### 🏠 [Homepage](https://tos.pbfp.xyz)
 
