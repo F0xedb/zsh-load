@@ -19,6 +19,7 @@ Clone this directory inside `oh-my-zsh` homedir
 Add the following lines to your .zshrc
 
 ```sh
+# These variables should be in the .profile file
 export ZSH_LOAD=$ZSH/load
 export ZSH_PRELOAD=$ZSH_LOAD/preload
 
