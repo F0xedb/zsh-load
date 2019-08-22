@@ -13,7 +13,7 @@ fi
 if [[ "$(tty)" != "/dev/tty1" ]]; then
     # setting the keyboard in the i3 config doesn't work for packet tracer
     # doing it this way makes it work it is a bug
-    setxkbmap be
+    setxkbmap "$KEY"
 fi
 
 #enable completion function
