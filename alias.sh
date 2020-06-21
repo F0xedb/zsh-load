@@ -5,7 +5,9 @@ for code ({0..20}) ; do alias $code="cd -$code"; done  && alias d='dirs -v' && f
 
 alias password='echo $(head -c 100 /dev/urandom | base64 | head -c 12)'
 
-alias cat='ccat'
+if [[ "$(command -v ccat)" != "" ]]; then
+    alias cat='ccat'
+fi
 
 if [[ "$(which lsd)" == "/usr/bin/lsd" ]]; then
     alias ls='lsd'
@@ -14,6 +16,8 @@ fi
 alias pdf='zathura'
 alias md='typora'
 alias neoshot="neofetch | sed -r 's:Public IP.*[0-9a-f]{2}:Public IP\: Blurred for screenshot purpose:'"
+alias cpu="cat /proc/stat | grep 'cpu ' | awk '{print (\$2+\$3+\$4)/(\$2+\$3+\$4+\$5+\$6+\$7+\$8+\$9+\$10+\$11)*100 \"% usage\"}'"
+
 
 # Place more aliases here if you need them
 
