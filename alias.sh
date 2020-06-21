@@ -17,6 +17,7 @@ alias pdf='zathura'
 alias md='typora'
 alias neoshot="neofetch | sed -r 's:Public IP.*[0-9a-f]{2}:Public IP\: Blurred for screenshot purpose:'"
 alias cpu="cat /proc/stat | grep 'cpu ' | awk '{print (\$2+\$3+\$4)/(\$2+\$3+\$4+\$5+\$6+\$7+\$8+\$9+\$10+\$11)*100 \"% usage\"}'"
+alias ram="free -h | grep 'Mem:' | awk '{print \$3 \"/\" \$2}'"
 
 
 # Place more aliases here if you need them
