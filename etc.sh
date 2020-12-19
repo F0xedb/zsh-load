@@ -2,7 +2,7 @@
 
 if [[ "$(id -u)" != "0" ]]; then
     # only ask for ssh-agent once for every boot
-    if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+    if ! pgrep ssh-agent; then
         eval `ssh-agent`
         ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
     fi
