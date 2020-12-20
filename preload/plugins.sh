@@ -9,7 +9,7 @@ plugins=(
   colored-man-pages # colorize your man pages
   zsh-autosuggestions # give autocompletion example when typing a command
   zsh-autocomplete # smart filling of current command
-  zsh-syntax-highlighting #colorize the command you enter in your terminal
+  fast-syntax-highlighting #colorize the command you enter in your terminal
   dirpersist # automatically save the last 20 dirs into pushd/popd
   zsh-completions
 )
