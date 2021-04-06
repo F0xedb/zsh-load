@@ -16,5 +16,9 @@ if [[ "$(tty)" != "/dev/tty1" ]]; then
     setxkbmap "$KEY"
 fi
 
+if [[ -f "/etc/grc.zsh" ]]; then
+    source /etc/grc.zsh
+fi
+
 #enable completion function
 compinit -u
