@@ -3,7 +3,6 @@
 
 if [[ "$(tty)" == "/dev/tty1" ]]; then
     source ~/.profile
-    source swayfig.sh
 fi
 
 function load() {
@@ -29,4 +28,6 @@ source $ZSH/oh-my-zsh.sh
 load $ZSH_LOAD
 
 #print neofetch a terminal information tool
-neofetch
+if [[ "$(command -v neofetch)" != "" ]]; then
+    neofetch
+fi
